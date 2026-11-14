@@ -4,7 +4,7 @@
 
 Termoelektrik adalah fenomena ketika perbedaan suhu menghasilkan tegangan listrik, atau ketika arus listrik memindahkan panas. Karena dapat mengubah panas langsung menjadi listrik tanpa bagian bergerak, bahan termoelektrik (TE) berpotensi digunakan untuk pemulihan panas buangan, pendinginan, sensor, dan sumber daya berukuran kecil.
 
-Materi ini merangkum artikel tinjauan **“Transition metal oxides – Thermoelectric properties”** oleh Walia dkk. Artikel tersebut membahas oksida logam transisi (*transition metal oxides*, TMOs), termasuk oksida titanium, mangan, tungsten, seng, tembaga, vanadium, kobalt, rhodium, dan molibdenum. Sifat listrik dan panasnya dapat disetel melalui komposisi, doping, struktur, serta ukuran material. Stabilitas pada suhu tinggi, pilihan metode sintesis yang beragam, dan ketersediaan sejumlah oksida menjadi alasan material ini menarik untuk diteliti.
+Materi ini merangkum artikel **“Transition metal oxides – Thermoelectric properties”** oleh Walia dkk. Artikel tersebut membahas oksida logam transisi (*transition metal oxides*, TMOs), termasuk oksida titanium, mangan, tungsten, seng, tembaga, vanadium, kobalt, rhodium, dan molibdenum. Sifat listrik dan panasnya dapat diatur melalui komposisi, doping, struktur, serta ukuran material. Stabilitas pada suhu tinggi, pilihan metode sintesis yang beragam, dan ketersediaan sejumlah oksida menjadi alasan material ini menarik untuk diteliti.
 
 > **Catatan ruang lingkup:** sumber utama terbit pada 2013. Nilai kinerja dan contoh di bawah adalah hasil studi yang dirangkum dalam artikel tersebut; nilainya bergantung pada komposisi, struktur, metode pembuatan, dan suhu pengukuran, sehingga tidak dapat dibandingkan langsung tanpa konteks.
 
@@ -14,9 +14,17 @@ Materi ini merangkum artikel tinjauan **“Transition metal oxides – Thermoele
 
 Jika kedua ujung bahan berada pada suhu berbeda, pembawa muatan bergerak dan menimbulkan beda potensial. Secara sederhana:
 
-`ΔV ≈ S ΔT`
+$$
+\Delta V \approx S\,\Delta T
+$$
 
-`S` adalah koefisien Seebeck (V/K), `ΔT` perbedaan suhu, dan `ΔV` tegangan yang dihasilkan. Tanda `S` berkaitan dengan jenis pembawa muatan dominan: elektron (tipe-n) atau lubang (tipe-p).
+**Keterangan:**
+
+- $\Delta V$: tegangan yang dihasilkan (V)
+- $S$: koefisien Seebeck (V/K)
+- $\Delta T$: perbedaan suhu antara kedua ujung bahan (K)
+
+Tanda koefisien Seebeck berkaitan dengan jenis pembawa muatan dominan: elektron (tipe-n) atau lubang (tipe-p).
 
 ### Daya hantar listrik
 
@@ -24,20 +32,64 @@ Konduktivitas listrik `σ` (S/m) menggambarkan kemudahan arus mengalir. Pada oks
 
 ### Konduktivitas termal
 
-Konduktivitas termal total dapat dipandang sebagai gabungan kontribusi kisi dan elektron:
+Konduktivitas termal total dapat dipandang sebagai gabungan kontribusi kisi dan elektron.
 
-`κ = κ_kisi + κ_elektron`
+$$
+\kappa_{\text{total}} = \kappa_{\text{kisi}} + \kappa_{\text{elektron}}
+$$
 
-Pada banyak oksida semikonduktor, fonon yang merambat pada kisi menjadi penyumbang utama. Hamburan fonon oleh cacat kristal, batas butir, antarmuka, atau struktur berukuran nano dapat menurunkan `κ_kisi`. Untuk kontribusi elektron, pendekatan hukum Wiedemann–Franz menyatakan `κ_elektron ≈ LσT`, dengan `L` bilangan Lorenz dan `T` suhu mutlak.
+**Keterangan:**
+
+- $\kappa_{\text{total}}$: konduktivitas termal total (W/(m·K))
+- $\kappa_{\text{kisi}}$: kontribusi hantaran panas oleh fonon pada kisi
+- $\kappa_{\text{elektron}}$: kontribusi hantaran panas oleh elektron
+
+Pada banyak oksida semikonduktor, fonon yang merambat pada kisi menjadi penyumbang utama. Hamburan fonon oleh cacat kristal, batas butir, antarmuka, atau struktur berukuran nano dapat menurunkan kontribusi hantaran panas kisi.
+
+Untuk kontribusi elektron, pendekatan hukum Wiedemann–Franz memberikan hubungan berikut:
+
+$$
+\kappa_{\text{elektron}} \approx L\,\sigma\,T
+$$
+
+**Keterangan:**
+
+- $\kappa_{\text{elektron}}$: konduktivitas termal elektron (W/(m·K))
+- $L$: bilangan Lorenz (W·Ω/K²)
+- $\sigma$: konduktivitas listrik (S/m)
+- $T$: suhu mutlak (K)
 
 ### Faktor daya dan angka mutu
 
-Dua ukuran yang umum dipakai adalah:
+**Faktor daya termoelektrik (TPF/PF)** mengukur gabungan kontribusi koefisien Seebeck dan konduktivitas listrik:
 
-- **Faktor daya termoelektrik (TPF/PF):** `PF = S²σ`
-- **Angka mutu tak berdimensi:** `ZT = S²σT/κ = PF·T/κ`
+$$
+\mathrm{PF} = S^2\,\sigma
+$$
 
-Nilai `ZT` yang lebih tinggi menandakan potensi konversi termoelektrik yang lebih baik. Sasaran rekayasa umumnya adalah memperoleh `S` dan `σ` yang tinggi sekaligus `κ` yang rendah. Sasaran tersebut tidak mudah dicapai karena parameter-parameter itu saling berhubungan: menaikkan konsentrasi pembawa muatan, misalnya, sering meningkatkan `σ` tetapi dapat menurunkan `S`.
+**Keterangan:**
+
+- $\mathrm{PF}$: faktor daya termoelektrik (W/(m·K²))
+- $S$: koefisien Seebeck (V/K)
+- $\sigma$: konduktivitas listrik (S/m)
+
+**Angka mutu tak berdimensi (`ZT`)** memperhitungkan faktor daya, suhu, dan konduktivitas termal:
+
+$$
+ZT = \frac{S^2\,\sigma\,T}{\kappa}
+   = \frac{\mathrm{PF}\,T}{\kappa}
+$$
+
+**Keterangan:**
+
+- $ZT$: angka mutu termoelektrik (tanpa satuan)
+- $S$: koefisien Seebeck (V/K)
+- $\sigma$: konduktivitas listrik (S/m)
+- $T$: suhu mutlak (K)
+- $\kappa$: konduktivitas termal total (W/(m·K))
+- $\mathrm{PF}$: faktor daya termoelektrik (W/(m·K²))
+
+Nilai `ZT` yang lebih tinggi menandakan potensi konversi termoelektrik yang lebih baik. Sasaran rekayasa umumnya adalah memperoleh koefisien Seebeck dan konduktivitas listrik tinggi sekaligus konduktivitas termal rendah. Sasaran tersebut tidak mudah dicapai karena parameter-parameter itu saling berhubungan: menaikkan konsentrasi pembawa muatan, misalnya, sering meningkatkan konduktivitas listrik tetapi dapat menurunkan koefisien Seebeck.
 
 ## Cara meningkatkan kinerja oksida
 

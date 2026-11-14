@@ -15,7 +15,7 @@ Materi ini merangkum artikel **“Transition metal oxides – Thermoelectric pro
 Jika kedua ujung bahan berada pada suhu berbeda, pembawa muatan bergerak dan menimbulkan beda potensial. Secara sederhana:
 
 $$
-\Delta V \approx S\,\Delta T
+\Delta V \approx S\ \Delta T
 $$
 
 **Keterangan:**
@@ -64,7 +64,7 @@ $$
 **Faktor daya termoelektrik (TPF/PF)** mengukur gabungan kontribusi koefisien Seebeck dan konduktivitas listrik:
 
 $$
-\mathrm{PF} = S^2\,\sigma
+\mathrm{PF} = S^2\ \sigma
 $$
 
 **Keterangan:**
@@ -76,8 +76,8 @@ $$
 **Angka mutu tak berdimensi (`ZT`)** memperhitungkan faktor daya, suhu, dan konduktivitas termal:
 
 $$
-ZT = \frac{S^2\,\sigma\,T}{\kappa}
-   = \frac{\mathrm{PF}\,T}{\kappa}
+ZT = \frac{S^2\ \sigma\ T}{\kappa}
+   = \frac{\mathrm{PF}\ T}{\kappa}
 $$
 
 **Keterangan:**
